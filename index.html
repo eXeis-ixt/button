@@ -11,9 +11,11 @@
     <title>css button</title>
 </head>
 <body>
-    
- <a  class="btn" href="#"><span>Button</span></a>
+    <div>
 
+        <a  class="btn" href="#"><span>Button</span></a>
+        
+    </div>
 
 <script>
 
@@ -23,15 +25,13 @@ btn.onmousemove = function(e){
 
 
 const x = e.pageX - btn.offsetLeft;
-const y = e.pageY - btn.offsetTopt;
+const y = e.pageY - btn.offsetTop;
 
 
 btn.style.setProperty('--x', x + 'px');
 btn.style.setProperty('--y', y + 'px');
 
 }
-
-
 
 </script>
 
